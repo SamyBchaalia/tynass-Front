@@ -1,0 +1,22 @@
+.card{
+    border:none;
+    border-radius: 25px;
+    /* width: 57.5%;
+    height: 100%; */
+    min-height: 500px;
+    min-width: 350px;
+    margin: 10%; 
+}
+
+.special-card-image{
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    background-color: #44a5d5;
+}

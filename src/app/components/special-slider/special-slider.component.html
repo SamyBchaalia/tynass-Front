@@ -1,0 +1,32 @@
+<div class="container m-0 p-0">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+        <ul class="uk-slideshow-items box radius shadow" >
+            <li *ngFor="let item of data">
+                <img [src]="item.background_image" class="cover-img" uk-cover>
+                <div class="uk-position-center uk-text-center uk-light">
+                    <img uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0" [src]="item?.logo_image" class="logo">
+                    <h5 uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="w-75 mx-auto font-weight-bold uk-margin-small text-light testimonial-text line-height4">{{item.text}}</h5>
+                </div>
+            </li>
+            
+        </ul>
+        <a uk-slideshow-item="previous" #previous></a>
+        <a uk-slideshow-item="next" #next></a>
+        <div class="uk-position-bottom-center uk-position-small uk-margin-medium-bottom">
+            <a (click)="slide('previous')" class="mx-2 myBtn"><img src="../../../assets/previous-icon.png" width="50"></a>
+            <a (click)="slide('next')" class="mx-2 myBtn"><img src="../../../assets/next-icon.png" width="50"></a>
+        </div>
+        <div class="uk-position-bottom-center uk-position-small">
+            
+            <ul class="uk-dotnav">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+                <li uk-slideshow-item="4"><a href="#">Item 5</a></li>
+                <li uk-slideshow-item="5"><a href="#">Item 6</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

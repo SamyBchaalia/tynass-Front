@@ -1,0 +1,170 @@
+button:hover {
+  transform: scale(1.025);
+  transition: all 0.15s linear;
+}
+
+.ads-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.ad-image {
+  /* width: 50%; */
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* object-fit: cover; */
+
+.fixed-top-margin {
+  margin-top: 100px;
+}
+
+.teamslider-image img {
+  width: auto;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card-holder {
+  height: 400px;
+  overflow: hidden;
+}
+
+.vertical-slider {
+  max-height: 700px;
+}
+
+.slider2-element-container {
+  /* width: auto; */
+  /* height: 700px !important; */
+}
+
+.swiper-container {
+  padding: 0%;
+  margin: 0%;
+}
+
+.beforeForm {
+  min-height: 600px;
+  background: url("../../../assets/Together We Make The.png") no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.afterForm {
+  min-height: 800px;
+  /* padding-bottom: 62.5%; */
+  width: 100%;
+  background: url("../../../assets/congrats.png") no-repeat;
+  /* background-position: 50% 50%; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  height: 55px;
+  border-bottom: 2px solid #44a5d5;
+}
+
+.input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  height: 75px;
+  border-bottom: 2px solid #44a5d5;
+  resize: none;
+}
+
+::placeholder {
+  color: #44a5d5;
+  opacity: 0.75;
+}
+
+.ads-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.ads-image {
+  width: 600px;
+}
+.ads-image img {
+  border-radius: 25px;
+}
+.extras-my {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.my-text {
+  font-size: 19px;
+}
+.my-main-title {
+  font-size: 63px;
+}
+.my-title {
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .afterForm {
+    max-height: 200px;
+    width: 100%;
+    background: url("../../../assets/congrats.png") no-repeat;
+    /* background-position: 50% 50%; */
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .extras-my {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .bfooter-toptext {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .bfooter-maintext {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .vertical-slider {
+    max-height: 450px;
+  }
+  .bfooter-toptext {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .bfooter-maintext {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.uk-sticky-fixed {
+  box-shadow: 0px -11px 28px 1px rgba(176, 176, 176, 0.5);
+}

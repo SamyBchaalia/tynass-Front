@@ -1,0 +1,13 @@
+<!-- <div class="container p-4"> -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <img [src]="data.img" class="special-card-image" alt="">
+            <h3 class="special-color bold-text">{{data.title}}</h3>
+            <p class="gray-text line-height6">{{data.description}}</p>
+            <div class="d-flex flex-row text-dark bold-text pb-4" *ngFor="let item of data.extra;let i=index;">
+                <div class="circle my-auto"></div> 
+                <div class="my-auto mx-2">{{item}}</div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->

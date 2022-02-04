@@ -1,0 +1,611 @@
+<div class="uk-section-muted uk-preserve-color">
+  <div
+    class="uk-section-muted"
+    uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-secondary; top: 200"
+  >
+    <nav class="uk-container uk-container-large uk-navbar myNav">
+      <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active">
+            <a class="" href=""
+              ><img
+                uk-img
+                src="../../../assets/tynassLogo.png"
+                class="logoNav"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-position-center uk-visible@m">
+          <li><a class="nav-text mx-5" (click)="goTo(home)">Home</a></li>
+          <li><a class="nav-text mx-5" (click)="goTo(about)">About</a></li>
+          <li>
+            <a class="nav-text mx-5" (click)="goTo(services)">Services</a>
+          </li>
+          <li><a class="nav-text mx-5" (click)="goTo(team)">Team</a></li>
+          <li><a class="nav-text mx-5" (click)="goTo(contact)">Contact</a></li>
+        </ul>
+        <a
+          href="#"
+          class="uk-navbar-toggle uk-hidden@m"
+          uk-navbar-toggle-icon
+          uk-toggle="target: #sidenav"
+        ></a>
+      </div>
+    </nav>
+  </div>
+  <div id="sidenav" uk-offcanvas="mode:push;flip: true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-active">Menu</li>
+        <li class="uk-parent">
+          <ul class="uk-nav-sub">
+            <li class="p-2">
+              <a uk-toggle="target: #sidenav" (click)="goTo(home)">Home</a>
+            </li>
+            <li class="p-2">
+              <a uk-toggle="target: #sidenav" (click)="goTo(about)">About</a>
+            </li>
+            <li class="p-2">
+              <a uk-toggle="target: #sidenav" (click)="goTo(services)"
+                >Services</a
+              >
+            </li>
+            <li class="p-2">
+              <a uk-toggle="target: #sidenav" (click)="goTo(team)">Team</a>
+            </li>
+            <li class="p-2">
+              <a uk-toggle="target: #sidenav" (click)="goTo(contact)"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="uk-section uk-dark uk-padding-remove-top uk-padding-remove-bottom main"
+  >
+    <div class="container-fluid m-0 p-0 mt-5">
+      <!-- <div *ngIf="loading" class="container">
+      <div class="uk-position-center" uk-spinner="ratio: 1"></div>
+  </div> -->
+      <!-- *ngIf="!loading" -->
+      <!-- <div @fade> -->
+
+      <div class="row" #home>
+        <div class="col-md-7 col-sm-12">
+          <div class="container line-height6">
+            <div class="row mx-0 mx-lg-5 p-0 p-lg-5">
+              <div class="line-height60 p-4 p-md-0">
+                <h1 class="huge text-dark line-height8">
+                  WE MAKE <br /><span class="special-color">INNOVATION</span>
+                  <br />FROM THE UNKNOWN
+                </h1>
+                <p class="line-height6 gray-text py-4 my-text">
+                  We are solving the problems that nobody bothered solving to
+                  give you the satisfaction that you deserve and need.
+                </p>
+                <div class="d-flex flex-row">
+                  <button
+                    class="special-btn bold-text special-color shadow-sm"
+                    (click)="goTo(register)"
+                  >
+                    Let's work together
+                  </button>
+                  <button
+                    class="btn btn-transparent shadow-sm play-btn my-auto"
+                    href="#modal-media-youtube"
+                    uk-toggle
+                  >
+                    <i class="fas fa-play special-color"></i>
+                  </button>
+                  <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+                    <div
+                      class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical"
+                    >
+                      <a
+                        class="uk-modal-close-outside"
+                        type="button"
+                        uk-close
+                      ></a>
+                      <iframe
+                        src="https://www.youtube.com/embed/4KL5xhYCuNY"
+                        width="1024"
+                        height="576"
+                        frameborder="0"
+                        uk-video
+                        uk-responsive
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 d-none d-md-block m-0 p-4">
+          <img src="../../assets/big_screen_img.png" class="" />
+        </div>
+        <!-- <div class="col-md-6 px-xs-5 container my-auto">
+                    
+                </div>
+                <div class="col-md-5 d-none d-md-block">
+                    <div>
+                    </div>
+                </div> -->
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="container line-height6">
+            <div class="row mx-0 mx-lg-5 p-0 p-lg-5">
+              <h2 class="special-color bold-text">WE ARE TRUSTED BY</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12 custom-style m-0 p-0">
+          <div
+            class="d-flex flex-row align-items-center justify-content-center mx-4"
+          >
+            <div class="w-100">
+              <div
+                class=""
+                tabindex="-1"
+                uk-slider="autoplay: true;autoplay-interval:3000"
+              >
+                <ul
+                  class="uk-slider-items uk-child-width-1-3 uk-child-width-1-4@m"
+                >
+                  <li *ngFor="let trust of trusts">
+                    <div class="uk-panel text-center">
+                      <img [src]="trust" class="img-fluid mx-auto" />
+                    </div>
+                  </li>
+                </ul>
+
+                <a uk-slider-item="previous" #slider1_PreviousButton></a>
+                <a uk-slider-item="next" #slider1_NextButton> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 d-none d-md-block">
+        <div class="col-md-12">
+          <div class="d-flex flex-row-reverse">
+            <a
+              class="special-nav-buttons mx-2 special-color"
+              (click)="clickSlider1('next')"
+              ><i class="fas fa-arrow-alt-circle-right fa-2x"></i
+            ></a>
+            <a
+              class="special-nav-buttons special-color"
+              (click)="clickSlider1('previous')"
+              ><i class="fas fa-arrow-alt-circle-left fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-5">
+        <div class="col-md-6">
+          <div class="container line-height6">
+            <div class="row mx-0 mx-lg-5 p-0 p-lg-5">
+              <h4 class="uk-text-bold special-color mb-3">COMPANY PROFILE</h4>
+              <h2 class="mb-3 line-height6">
+                Curious, Committed, Honest Storytellers
+              </h2>
+              <p class="gray-text my-text">
+                Tynass IT is a company with the goal of creating applications
+                dedicated to web and mobile platforms to solve and facilitate
+                many of the problem that face the modern civilian concerning
+                many topics like tourism, education and many more ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-2"></div> -->
+        <div class="col-md-6 p-5 p-md-0">
+          <div
+            class="uk-position-relative uk-light"
+            uk-slideshow="autoplay: true;autoplay-interval:5000"
+          >
+            <ul class="uk-slideshow-items slider2-container">
+              <li class="w-100 h-100" *ngFor="let image of slider2">
+                <img
+                  [src]="image.img"
+                  class="slider2-image h-100"
+                  [alt]="image?.alt"
+                />
+              </li>
+            </ul>
+
+            <a uk-slideshow-item="previous" #slider2_PreviousButton></a>
+            <a uk-slideshow-item="next" #slider2_NextButton></a>
+
+            <div class="uk-position-bottom-center uk-position-small">
+              <ul class="uk-dotnav">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="4"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="5"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="6"><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12 d-none d-md-block">
+          <div class="d-flex flex-row-reverse">
+            <a
+              class="special-nav-buttons mx-2 special-color"
+              (click)="clickSlider2('next')"
+              ><i class="fas fa-arrow-alt-circle-right fa-2x"></i
+            ></a>
+            <a
+              class="special-nav-buttons special-color"
+              (click)="clickSlider2('previous')"
+              ><i class="fas fa-arrow-alt-circle-left fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!--  @slideInLeft -->
+      <div
+        class="row extras-my"
+        uk-scrollspy="cls:uk-animation-slide-left;delay:100"
+      >
+        <div class="col-lg-6 col-xl-6 col-md-12 mx-auto">
+          <div class="row">
+            <div class="col-md-6 text-center my-auto">
+              <img
+                src="../../../assets/rocket.png"
+                width="300"
+                class="rocket-style img-fluid mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 my-auto">
+              <div class="my-auto ml-5">
+                <h3
+                  class="line-height6 uk-text-left@xl uk-text-left@l uk-text-left@m uk-text-center@s"
+                >
+                  <b>
+                    <span class="special-color">PEOPLE</span> DON'T BUY WHAT YOU
+                    DO <br />
+                    THEY BUY WHY YOU <span class="special-color">DO IT</span></b
+                  >
+                </h3>
+                <p
+                  class="gray-text uk-text-left@xl uk-text-left@l uk-text-left@m uk-text-center@s line-height4 my-text"
+                >
+                  We are solving the problems that nobody bothered solving to
+                  give you the satisfaction that you deserve and need.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 150px" #services>
+        <div class="col-md-4 col-xl-4 d-none d-xl-block m-0 p-0">
+          <img
+            src="../../../assets/TynassIT-team-brainstorming.png"
+            name="TynassIT-team-brainstorming"
+            class="w-100"
+            alt="Startup TynassIT's team brainstorming meeting at the tunis international center for digital cultural economy in tunisia"
+          />
+        </div>
+        <div class="col-lg-12 col-xl-8 m-0 p-0 my-auto">
+          <swiper class="swiper-container" [config]="brainstormingConfig">
+            <div *ngFor="let card of brainstorming">
+              <special-card [data]="card"></special-card>
+            </div>
+          </swiper>
+        </div>
+      </div>
+      <div class="row mt-5" #about>
+        <div class="col-md-12 mx-auto text-center">
+          <img src="../../../assets/cup.png" width="250" alt="" />
+          <h2 class="line-height6">
+            Authenticity, Honesty & <br />
+            Personal voice
+          </h2>
+          <p class="line-height6 gray-text my-text">
+            Our moto is to be friendly to our clients and make sure that we
+            deliver the best solutions to satisfy their needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mx-auto text-center">
+            <special-slider></special-slider>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-5" #team>
+        <div class="col-md-5">
+          <div class="row line-height6 p-4 p-md-0">
+            <div class="row mx-0 mx-lg-5 p-0 p-lg-5">
+              <h4 class="uk-text-bold special-color mb-3">OUR TEAM</h4>
+              <h2 class="mb-3">Teamwork, Perfection, & Consistency</h2>
+              <p class="gray-text my-text">
+                we pride ourselves to be one of the youngest teams in our
+                country trying to achieve our vision which is the digitalization
+                of more aspecs of the daily life of our consumers, and with the
+                help of our competent staff we hope to achieve these goals like
+                we achieved many victories in
+              </p>
+              <!-- <div class="d-flex flex-row">
+                                <button class="btn btn-transparent shadow-sm play-btn my-auto  m-0"
+                                    href="#modal-media-youtube" uk-toggle>
+                                    <i class="fas fa-play special-color"></i>
+                                </button>
+                                <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                        <a class="uk-modal-close-outside" type="button" uk-close></a>
+                                        <iframe src="https://www.youtube.com/embed/4KL5xhYCuNY" width="1024"
+                                            height="576" frameborder="0" uk-video uk-responsive></iframe>
+                                    </div>
+                                </div>
+                            </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 p-md-0">
+          <div class="w-100 mb-2" uk-slider="animation: fade">
+            <ul class="uk-slider-items h-100">
+              <li *ngFor="let member of teamArray">
+                <member-card [member]="member"></member-card>
+              </li>
+            </ul>
+            <a uk-slideshow-item="previous" #slider2_PreviousButton></a>
+            <a uk-slideshow-item="next" #slider2_NextButton></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-xl-5 d-none d-xl-block m-0 p-0">
+          <img
+            src="../../../assets/tynass_testamonial.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-7 vertical-slider d-flex flex-column m-0 px-5">
+          <h2 class="special-color my-3">TESTIMONIALS</h2>
+          <h2 class="my-3">Authenticity, Honesty & Personal voice</h2>
+          <swiper class="swiper-container my-3" [config]="config">
+            <div>
+              <testimonial-card [data]="testimonial[0]"></testimonial-card>
+            </div>
+            <div>
+              <testimonial-card [data]="testimonial[1]"></testimonial-card>
+            </div>
+            <div>
+              <testimonial-card [data]="testimonial[2]"></testimonial-card>
+            </div>
+          </swiper>
+        </div>
+      </div>
+
+      <div class="container-fluid p-0 m-0" #register>
+        <div class="row mt-5" *ngIf="registration == 0" @fade>
+          <div
+            class="col-md-12 align-middle beforeForm mx-auto my-auto text-center"
+          >
+            <div>
+              <h4 class="text-light my-title p-5 bfooter-toptext">
+                We offer solutions that can change and build a better country
+                for the next generations.
+              </h4>
+              <h1
+                class="text-light py-5 my-main-title line-height8 bfooter-maintext"
+              >
+                Together we make a <br />
+                difference.
+              </h1>
+              <button
+                class="special-btn-2 bold-text shadow-sm"
+                (click)="nextStep()"
+              >
+                Let's work together
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 registerForm" *ngIf="registration == 1" @fade>
+          <form
+            [formGroup]="userForm"
+            (ngSubmit)="subscription()"
+            class="col-md-8 p-5"
+          >
+            <h2 class="py-5 bold-text">
+              TOGETHER WE <span class="special-color">MAKE</span> THE
+              <span class="special-color">DIFFERENCE</span>
+            </h2>
+            <h5 class="light-text line-height4">
+              To us your opinion and feedback matters to help us improve.
+            </h5>
+            <div class="row py-5">
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  class="w-100 input"
+                  [ngClass]="
+                    fullname.touched && fullname.pristine ? 'border-danger' : ''
+                  "
+                  formControlName="fullname"
+                  placeholder="FULLNAME"
+                />
+                <div
+                  class="col-md-12 text-danger"
+                  *ngIf="fullname.touched && fullname.pristine"
+                >
+                  <strong>Fullname </strong> is required.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  class="w-100 input"
+                  [ngClass]="
+                    email.touched && email.pristine ? 'border-danger' : ''
+                  "
+                  formControlName="email"
+                  placeholder="E-MAIL"
+                />
+                <div
+                  class="col-md-12 text-danger"
+                  *ngIf="email.touched && email.pristine"
+                >
+                  <strong>E-mail </strong> is required.
+                </div>
+              </div>
+              <div class="col-md-8 mt-5">
+                <textarea
+                  placeholder="YOUR OFFER"
+                  [ngClass]="
+                    offer.touched && offer.pristine ? 'border-danger' : ''
+                  "
+                  formControlName="offer"
+                  class="w-100 mt-2"
+                  rows="1"
+                ></textarea>
+                <div
+                  class="col-md-12 text-danger"
+                  *ngIf="offer.touched && offer.pristine"
+                >
+                  <strong>Offer </strong> is required.
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row my-5">
+              <button type="submit" class="contact-us-btn bold-text shadow-sm">
+                Contact us
+              </button>
+              <div>
+                <img
+                  class="mx-3"
+                  src="../../../assets/0.png"
+                  style="width: 50px"
+                />
+                <b
+                  >CALL US ON
+                  <span class="special-color">+216 99 104 604</span></b
+                >
+              </div>
+            </div>
+          </form>
+          <div class="col-md-4 p-0 m-0">
+            <img
+              src="../../../assets/okayHand.png"
+              [@slideInRight]="registration == 1"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row m-0 p-0 mt-5" *ngIf="registration == 2" @fade>
+          <div class="col-md-12 m-0 p-0 mx-auto my-auto text-center">
+            <!-- afterForm -->
+            <div>
+              <h2 class="special-color">CONGRATULATIONS!!</h2>
+              <h2 class="text-dark font-weight-bold line-height8">
+                On making one of your best decision ever
+              </h2>
+              <h6 class="gray-text">
+                Thank your for your wonderful offer <br />
+                we are thrilled by your message stay in touch and we will conact
+                you as soon as possible
+              </h6>
+            </div>
+            <img
+              src="../../../assets/congrats.png"
+              class="w-100 m-0 p-0 img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <footer #contact>
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-1 my-auto text-center">
+              <img
+                src="../assets/tynassLogo.png"
+                class="img-fluid w-100"
+                style="max-width: 100px; user-select: none"
+              />
+            </div>
+            <div class="col-md-1 my-auto text-center py-2">
+              <a class="h6 navigation-link" (click)="goTo(home)">Home</a>
+            </div>
+            <div class="col-md-1 my-auto text-center py-2">
+              <a class="h6 navigation-link" (click)="goTo(about)">About</a>
+            </div>
+            <div class="col-md-1 my-auto text-center py-2">
+              <a class="h6 navigation-link" (click)="goTo(services)"
+                >Services</a
+              >
+            </div>
+            <div class="col-md-1 my-auto text-center py-2">
+              <a class="h6 navigation-link" (click)="goTo(team)">Team</a>
+            </div>
+            <div class="col-md-1 my-auto text-center py-2">
+              <a class="h6 navigation-link" (click)="goTo(contact)">Contact</a>
+            </div>
+            <div class="col-md-2 my-auto text-center">
+              <div class="d-flex flex-row py-2">
+                <div class="flex-grow-1">
+                  <img src="../assets/instagram.png" width="50" class="mx-2" />
+                  <a
+                    href="https://www.instagram.com/tynassit/"
+                    target="_blank"
+                    class="h5 social-link my-auto"
+                    >TynassIT</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 my-auto text-center">
+              <div class="d-flex flex-row py-2">
+                <div class="flex-grow-1">
+                  <img src="../assets/facebook.png" width="50" class="mx-2" />
+                  <a
+                    href="https://www.facebook.com/TynassIt"
+                    target="_blank"
+                    class="h5 social-link my-auto"
+                    >TynassIT</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 my-auto text-center">
+              <div class="d-flex flex-row py-2">
+                <div class="flex-grow-1">
+                  <img src="../assets/twitter.png" width="50" class="mx-2" />
+                  <a
+                    href="https://twitter.com/ittynass"
+                    target="_blank"
+                    class="h5 social-link my-auto"
+                    >TynassIT</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- </div> -->
+      <!--  -->
+    </div>
+  </div>
+</div>

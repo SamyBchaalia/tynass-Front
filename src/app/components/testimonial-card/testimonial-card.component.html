@@ -1,0 +1,23 @@
+<div class="myCard p-0 m-0">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <div class="card-title d-flex flex-row p-2">
+                <img width="100" [src]="data.img" class="rounded-circle">
+                <div class="mx-2 w-100 my-auto">
+                    <div class="d-flex flex-column">
+                        <h4 class="person-name">{{data.person}}</h4>
+                        <h5 class="person-role special-color">{{data.role}}</h5>
+                    </div>
+                </div>
+                <div class="d-flex flex-row my-auto">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <p class="card-text px-2 gray-text line-height-testimonial4">{{data.text}}</p>
+        </div>
+    </div> 
+</div>

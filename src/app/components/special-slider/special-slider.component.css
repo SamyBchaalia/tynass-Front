@@ -1,0 +1,34 @@
+.box{
+    height: 500px !important;
+}
+
+.radius{
+    border-radius: 25px;
+}
+.cover-img{
+    filter: brightness(65%);
+}
+.logo{
+    width: 350px;
+}
+.myBtn{
+    width: 75px;
+    
+}
+.testimonial-text{
+    user-select: none;
+}
+.myBtn:focus{
+    outline: none !important;;
+}
+@media screen and (max-width: 768px){
+    h5{
+        font-size: 14px;
+    }
+    .line-height4{
+        line-height: 30px;
+    }
+    .logo{
+        width: 250px;
+    }
+}

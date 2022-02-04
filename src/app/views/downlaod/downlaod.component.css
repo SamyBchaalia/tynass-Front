@@ -1,0 +1,92 @@
+.call-to {
+  display: grid;
+  margin-left: 18%;
+  margin-right: 18%;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+.call-to h1 {
+  color: #1e92f8;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  font-size: 39px;
+}
+.call-to h2 {
+  font-weight: bold;
+  color: #3dd598;
+  font-size: 16px;
+}
+
+.call-to p {
+  color: #949494;
+  font-size: 19px;
+  line-height: 60px;
+  margin-top: 0;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.call-to p span {
+  color: black;
+  font-weight: bold;
+}
+.call-to h3 {
+  font-size: 29px;
+}
+.call-to img {
+  margin-top: 20px;
+  width: 150px;
+  border-radius: 22%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-bottom: 30px;
+}
+.duplicate {
+  border-color: #3dd598 !important;
+}
+.politiqueTynass {
+  color: #1e92f8;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "poppins";
+}
+@media only screen and (max-width: 600px) {
+  .call-to {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20%;
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .call-to h1 {
+    color: #1e92f8;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    font-size: 39px;
+  }
+  .call-to h2 {
+    font-size: 16px;
+  }
+  .call-to h3 {
+    font-size: 26px;
+  }
+
+  .call-to p {
+    color: #949494;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 0;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    font-family: "poppins";
+  }
+  .call-to img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
