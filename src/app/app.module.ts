@@ -19,6 +19,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { MemberCardComponent } from './components/member-card/member-card.component';
 import { DownlaodComponent } from './views/downlaod/downlaod.component';
 import { PrivacyPolicyComponent } from './views/privacy-policy/privacy-policy.component';
+import { DownloadApplicationComponent } from './components/download-application/download-application.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -37,6 +38,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     MemberCardComponent,
     DownlaodComponent,
     PrivacyPolicyComponent,
+    DownloadApplicationComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
