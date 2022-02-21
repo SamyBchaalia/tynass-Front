@@ -9,9 +9,7 @@ import { TeamComponent } from './views/team/team.component';
 const routes: Routes = [
   { path: "", component: MainComponent },
   { path: "team", component: TeamComponent },
-  { path: "download", component: DownlaodComponent },
   { path: "privacy", component: PrivacyPolicyComponent },
-  { path: "downloaad", component: DownloadApplicationComponent }
 
 ];
 
